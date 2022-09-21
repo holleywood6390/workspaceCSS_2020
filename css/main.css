@@ -19,11 +19,11 @@ html{
 
 body{
     background-color: hsla(190, 62%, 71%, 0.6);
-    padding: 8%;
+    padding: 5%;
 }
 
 div.preamble, div.requirements, div.benefits{
-    color:hsla(180, 0%, 25%, 0.9);
+    color:rgba(9, 82, 141, 0.9);
     background-color: white;
 }
 
@@ -32,15 +32,15 @@ header h1{
 }
 
 footer{
-    background-color: hsla(10, 69%, 41%, 0.8);
+    background-color: hsla(10, 64%, 55%, 0.9);
 }
 
 div.participation{
-    background-color: hsla(10, 69%, 41%, 0.8);
+    background-color: hsla(34, 73%, 78%, 0.8);
 }
 
 aside.sidebar{
-    background-color: hsla(10, 69%, 41%, 0.8);
+    background-color: hsla(133, 69%, 41%, 0.8);
 }
 
 /* ----- Layout ----- */
@@ -50,7 +50,6 @@ div,article,section,header,nav,figure,li{
 
 header h1{
     position: relative;
-    left: -100ex;
 }
 
 aside.sidebar{
@@ -65,4 +64,69 @@ footer{
     width: 30%;
     left: 30%;
     bottom: 0px;
+}
+
+section.intro{
+    width: 60%;
+}
+
+div.explanation{
+    float: left;
+    width: 40%;
+    padding: 5%;
+}
+
+div.participation{
+    margin-left: 50%;
+    width: 40%;
+    padding: 5%;
+}
+
+div.benefits{
+    float: left;
+    width: 40%;
+}
+
+div.requirements{
+    margin-left: 50%;
+    width:40%;
+
+}
+
+
+/*** Font ***/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*** Local Font ***/
+@font-face {
+    font-family: 'myfont';
+    src: url('../fonts/chunkfive.woff');
+}
+
+header h1{
+    font-family: Dorsa, sans-serif;
+    text-indent: -9999px;
+    background-image: url('../img/zengarden.gif');
+}
+
+h3{
+    font-size: 2.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1em;
+    
+}
+h1{
+    font-size: 2.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: hsla(100, 85, 65, 0.9);
 }
