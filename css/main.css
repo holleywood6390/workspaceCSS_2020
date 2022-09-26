@@ -69,6 +69,11 @@ footer{
 section.intro{
     width: 60%;
 }
+section.intro div.preamble{
+    margin-left: -5%;
+    padding: 5% 5% 5% 5%;
+
+}
 
 div.explanation{
     float: left;
@@ -129,4 +134,59 @@ h1{
 a{
     text-decoration: none;
     color: hsla(100, 85, 65, 0.9);
+}
+
+/* Nav bar on top */
+#zen-resources{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: hsla(100, 50%, 25%, 0.5);
+}
+
+#zen-resources h3{
+    display: none;
+}
+
+#zen-resources ul li{
+    display: inline-block;
+    /* width, padding, border */
+    list-style: none;
+    width: 5px;
+    padding: 0% 5% 0% 5%;
+    border: 5em;
+}
+
+#zen-resources a{
+    color: white;
+}
+
+/* hover, active practice */
+p:hover{
+    border: hsla(0, 100%, 63%, 0.9) 5px solid;
+}
+
+h3:active {
+    visibility: hidden;
+    display: none;
+}
+
+li:first-of-type{
+    color: purple;
+} 
+
+p::first-letter{
+    font-size: 300%;
+    text-transform: uppercase;
+}
+
+p:nth-child(3n) {
+    background-color: green;
+}
+p:nth-child(3n+1){
+    background-color: yellow;
+}
+p:nth-child(3n+2){
+    background-color: red;
 }
